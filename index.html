@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Ersin METE</title>
+
+  
+  </head>
+  <body>
+    <div class="header">
+      <a href="#" class="logo">Ersin <span>METE</span></a>
+      <nav class="navbar">
+        <a href="#home" class="active">Ana Sayfa</a>
+        <a href="#about">Hakkımda</a>
+        <a href="#portfolio">Portföy</a>
+        <a href="#contact">iletişim</a>
+      </nav>
+    </div>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Merhaba</h3>
+        <br />
+        <h1>
+          Ben <span>Ersin,<br /></span> Frontend Geliştiriciyim.
+        </h1>
+        <p>
+          Bu benim kişisel web sayfam. Bu alanda henüz yeniyim. Yolum uzun
+          farkındayım...<br />Tekrar Hoşgeldin.
+        </p>
+        <div class="cv-btn">
+          <a href="ErsinMeteCV.pdf" download class="download-btn"
+            ><i class="fa-solid fa-cloud-arrow-down" style="cursor: url()">
+              CV</i
+            ></a
+          >
+        </div>
+      </div>
+      <div class="foto"></div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="ab-content">
+        <div class="ab-foto"></div>
+        <h1>Düşünülmeyeni düşündüğün an düşünülmeyecek kadar zengin olursun</h1>
+        <br />
+        <p class="p-one">
+          <span class="sp-merhaba">Merhaba</span>, Ben Ersin METE. <br />
+          Bilgisayar Programcılığı bölümünden mezun oldum ve yazılım dünyasına
+          olan tutkum ve merakım beni sürekli yeni şeyler öğrenmeye yönlendirdi.
+          öğrenme sürecimin her aşamasında, hem bireysel hem de ekip ile
+          çalışarak kazanmaya odaklandım.
+        </p>
+        <br />
+        <p>
+          Mezun olduktan sonra, kurduğum ve liderliğini üstlendiğim bir ekiple
+          birlikte çeşitli oyunlar geliştirdik. Bu süreç fikir üretme ve problem
+          çözme yeteneklerimi geliştirmeme olanak sağladı.
+        </p>
+        <br />
+        <p>
+          Askerlik hizmetimin ardından, web teknolojilerine ilgi duymaya
+          başladım. <span class="sp-html">Html</span>,
+          <span class="sp-css">Css</span> ve
+          <span class="sp-js">JavaScript</span> öğrenmeye başladım.
+        </p>
+        <br />
+        <p>
+          Henüz yolun başındayım ve sürekli olarak kendimi geliştirmek için çaba
+          harcıyorum. Her geçen gün daha fazla deneyim kazanmak için çabalıyorum
+          ve bu süreçte kendi zihnimle yarışıyorum. Hatta en basit bir projede
+          bile, zihnimde müthiş fikirler oluşuyor ve bunları hemen daha büyük
+          bir vizyonla birleştirip dönüştürüyorum. Ancak bu fikirleri gerçeğe
+          dönüştürmek için biraz daha tecrübe kazanmam gerektiğini biliyorum.
+        </p>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="pf-content">burası porfoy section</div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="ct-content">
+        <h1>Benimle iletişime geç</h1>
+        <form class="contact-form" id="contact-form">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Adınız Soyadınız"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="to"
+            placeholder="Mail adresiniz"
+            required
+          />
+          <textarea name="message" placeholder="Mesajınız" required></textarea>
+          <input
+            type="submit"
+            value="Gönder"
+            onsubmit="sendMail(event); return false;"
+          />
+        </form>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="footer-menu">
+        <a href="#home">Ana Sayfa</a>
+        <a href="#about">Hakkımda</a>
+        <a href="#portfolio">Portföy</a>
+        <a href="#contact">iletişim</a>
+      </div>
+      <div class="footer-icon">
+        <a href="https://www.instagram.com/ersinmetee" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://wa.me/905398286149?text=Merhaba" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://twitter.com/ErsinMete61" target="_blank"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a href="https://github.com/ersinmete" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/ersinmete/" target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="tel:+905398286149" target="_blank"
+          ><i class="fa-solid fa-phone"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+  </body>
+</html>

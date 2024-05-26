@@ -238,11 +238,12 @@ section {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  background-color: #116D6E;
+  background-color: #76ABAE;
 }
 
 .ct-content h1 {
-  color: orangered;
+  font-size: 4rem;
+  color: #222831;
 }
 
 #form {
@@ -261,16 +262,15 @@ section {
   height: 3rem;
   width: 30rem;
   border-radius: 1rem;
-  color: red;
-  padding: 0 10px; /* Metnin kenarlara yaslanmaması için padding ekliyoruz */
-  box-sizing: border-box; /* Padding dahil genişlik hesaplaması */
+  
+  padding: 0 10px; 
+  box-sizing: border-box;
 }
 
-textarea {
+#form textarea {
   height: 10rem;
   width: 30rem;
   border-radius: 1rem;
-  color: red;
   padding: 10px;
   box-sizing: border-box;
 }

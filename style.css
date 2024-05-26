@@ -63,7 +63,7 @@ html {
 .home {
   width: 100%;
   min-height: 100vh;
-  background: #31363f;
+  background: #222831  ;
   display: flex;
   align-items: center;
   gap: 7em;
@@ -134,7 +134,7 @@ section {
 
 .about {
   position: relative;
-  background: black;
+  background: #31363f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,29 +176,122 @@ section {
 .ab-content p .sp-js {
   color: orange;
 }
+/* ! Portfoy */
 .portfolio {
-  background-color: grey;
+  background-color: #27374D;
   display: grid;
   place-items: center;
 }
-.pf-content {
-  width: 500px;
-  height: 500px;
-  background-color: red;
-  color: black;
-  display: grid;
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.card {
+  width: 32.5rem;
+
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 25px orangered;
+  margin: 20px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 1.6rem;
+  text-align: center;
+}
+.card-content h3 {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+.card-content p {
+  color: #0077b5;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+.card-content a {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 2rem;
+  color: orangered;
+  margin-right: 1rem;
+}
+/* ! Portfoy End*/
+.contact {
+  display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  height: 100vh;
+  background-color: #526D82;
 }
-.contact {
-  background-color: rgb(167, 167, 61);
-  display: grid;
-  place-items: center;
+
+.ct-content {
+  height: 50rem;
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: #116D6E;
 }
-.contact-form {
-  display: grid;
+
+.ct-content h1 {
+  color: orangered;
 }
+
+#form {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+#form input::placeholder,
+#form textarea::placeholder {
+  color: orangered;
+  text-align: center;
+}
+
+#form input {
+  height: 3rem;
+  width: 30rem;
+  border-radius: 1rem;
+  color: red;
+  padding: 0 10px; /* Metnin kenarlara yaslanmaması için padding ekliyoruz */
+  box-sizing: border-box; /* Padding dahil genişlik hesaplaması */
+}
+
+textarea {
+  height: 10rem;
+  width: 30rem;
+  border-radius: 1rem;
+  color: red;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#form button {
+  padding: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: orangered;
+  color: lightblue;
+  border: none;
+  border-radius: 1rem;
+  transition: 0.3s;
+  width: 30rem;
+}
+
+#form button:hover {
+  background-color: lightgreen;
+  color: orangered;
+}
+
 .footer {
   background-color: black;
   display: flex;
@@ -216,7 +309,7 @@ section {
 }
 
 .footer-menu a {
-  background-color: red;
+  background-color: #627254;
   width: 8rem;
   height: 3rem;
   font-size: 1.2rem;
@@ -279,21 +372,58 @@ section {
 .footer-icon a:nth-child(2):hover {
   background-color: #24914c;
   outline-color: #06c26a;
-  
 }
 .footer-icon a:nth-child(3):hover {
   background-color: #000000;
   outline-color: #333;
 }
 .footer-icon a:nth-child(4):hover {
-  background-color: 	#24292e;
+  background-color: #24292e;
   outline-color: #2b3137;
 }
 .footer-icon a:nth-child(5):hover {
-  background-color: #0077b5 ;
+  background-color: #0077b5;
   outline-color: rgb(0, 153, 248);
 }
-.footer-icon a:nth-child(6):hover{
-  background-color: #25D366;
+.footer-icon a:nth-child(6):hover {
+  background-color: #25d366;
   outline-color: #0077b5;
+}
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: orangered;
+  color: white;
+  margin: 15% auto;
+  padding: 10px 40px;
+  border: 2px solid black;
+  width: 45rem;
+  height: 5rem;
+  font-size: 2rem;
+  display: flex;
+}
+
+.close {
+  justify-content: space-between;
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

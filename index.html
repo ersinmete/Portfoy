@@ -11,10 +11,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "BR1FWJrzFEU56c25Z",
+        });
+      })();
+    </script>
+    <script src="emailform.js"></script>
 
     <title>Ersin METE</title>
-
-  
   </head>
   <body>
     <div class="header">
@@ -83,38 +93,100 @@
           bir vizyonla birleştirip dönüştürüyorum. Ancak bu fikirleri gerçeğe
           dönüştürmek için biraz daha tecrübe kazanmam gerektiğini biliyorum.
         </p>
+        <br />
+        <p>Bu Sektörde Var Olmam Gerektiğine İnanıyorum</p>
       </div>
     </section>
 
     <section class="portfolio" id="portfolio">
-      <div class="pf-content">burası porfoy section</div>
+      <div class="projects">
+        <div class="card">
+          <img src="movie.avif" alt="" />
+          <div class="card-content">
+            <h3>Film Sitesi</h3>
+            <p>
+              Yatay dikey menü gündüz gece modu sosyal media iconları kayar
+              içerikler içeren bir site bu konularda gelişmek için denedim. ilk
+              responsive projem
+            </p>
+            <a href="https://denemesitesi61.netlify.app/" target="_blank"
+              ><i class="fa-solid fa-globe"></i
+            ></a>
+            <a href="https://github.com/ersinmete/Trailer" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="hava.PNG" alt="" />
+          <div class="card-content">
+            <h3>Hava Durumu</h3>
+            <p>
+              İlk API kullandığım projem. Geçek hava verileri içeriyor. Şehir
+              ülke seçip takip edilebilir. Arama çubuğunda yaptığınız konumun
+              hava bilgisi kart şeklinde gelir istediğiniz kadar kart eklenbilir
+              JavaScript odaklı bir proje.
+            </p>
+            <a href="https://hava1.netlify.app/" target="_blank"
+              ><i class="fa-solid fa-globe"></i
+            ></a>
+            <a
+              href="https://github.com/ersinmete/WeatherApp"
+              target="_blank"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="çizim.PNG" alt="" />
+          <div class="card-content">
+            <h3>Çizim-Boyama</h3>
+            <p>
+              Ekran boyama çizme silme içeren bir proje indirme butonu ekleyerek
+              çiziminizi png dosyası olarak yapabiliyor JavaScript odaklı
+              gelişmek için denedim.
+            </p>
+            <a href="https://cizim1.netlify.app/" target="_blank"
+              ><i class="fa-solid fa-globe"></i
+            ></a>
+            <a
+              href="https://github.com/ersinmete/DrowApp"
+              target="_blank"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="contact" id="contact">
       <div class="ct-content">
         <h1>Benimle iletişime geç</h1>
-        <form class="contact-form" id="contact-form">
+        <div id="form">
           <input
             type="text"
-            name="name"
-            id="name"
-            placeholder="Adınız Soyadınız"
+            id="fullName"
+            placeholder="Full Name"
             required
-          />
+          /><br />
           <input
             type="email"
-            name="email"
-            id="to"
-            placeholder="Mail adresiniz"
+            id="email_id"
+            placeholder="Email Id"
             required
-          />
-          <textarea name="message" placeholder="Mesajınız" required></textarea>
-          <input
-            type="submit"
-            value="Gönder"
-            onsubmit="sendMail(event); return false;"
-          />
-        </form>
+          /><br />
+          <textarea id="message" placeholder="Message" required></textarea
+          ><br />
+          <button type="submit" onclick="SendMail()">Gönder</button>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <p id="modal-message">E-posta gönderiliyor...</p>
+            <br /><span class="close">&times;</span>
+          </div>
+        </div>
       </div>
     </section>
 
